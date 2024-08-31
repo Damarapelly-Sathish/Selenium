@@ -32,7 +32,14 @@ public class AmazonWebTesting {
         driver.findElement(By.id("signInSubmit")).click();
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("alba botanica");
         driver.findElement(By.id("nav-search-submit-button")).click();
+        driver.findElement(By.xpath("//span[contains(text(),'Very Emollient Body Lotion, Unscented Original, 32 Oz')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id("add-to-cart-button")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.id("nav-cart-count")).click();
+        driver.findElement(By.className("a-button-input")).click();
+        driver.quit();
         
-	}
+        }
 
 }
