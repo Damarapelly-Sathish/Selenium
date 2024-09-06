@@ -12,11 +12,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import ch.qos.logback.core.joran.action.Action;
 
-@SpringBootApplication
+
 public class AmazonWebTesting {
 
 	public static void main(String[] args) throws InterruptedException {
-		SpringApplication.run(AmazonWebTesting.class, args);
+//		SpringApplication.run(AmazonWebTesting.class, args);
 //		System.setProperty("webdriver.chrome.driver","E:\\SelemiumProject\\chromedriver-win64");
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.amazon.com/");
